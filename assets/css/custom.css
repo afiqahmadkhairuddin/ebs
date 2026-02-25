@@ -1,0 +1,70 @@
+:root {
+  --brand-primary: #5b2be0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #1b2430;
+}
+
+.py-lg-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #4a1ec9;
+  border-color: #4a1ec9;
+}
+
+.btn-outline-primary {
+  color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #f8f5ff 0%, #f4f9ff 100%);
+}
+
+.hero-card,
+.service-card {
+  border: 1px solid #eef0f4;
+}
+
+.client-logos img {
+  max-height: 72px;
+  object-fit: contain;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
