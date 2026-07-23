@@ -51,9 +51,13 @@
           ]
         }
     </script>
-    <!-- Google tag (gtag.js) --> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10852613132"></script> 
-    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10852613132'); </script>
+    
+
+
+    
+</head>
+
+<body>
     <!-- Event snippet for Outbound click Email ebs conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
@@ -76,7 +80,7 @@ function gtag_report_conversion(url) {
 <!-- Event snippet for Outbound click WhatsApp conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-function gtag_report_conversion(url) {
+function gtag_report_conversion_ws(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
       window.location = url;
@@ -91,12 +95,7 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
-
-
     
-</head>
-
-<body>
     <a href="https://wa.me/60109216457?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services!" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with EBS Resources on WhatsApp">
         <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp icon">
     </a>
@@ -235,10 +234,10 @@ function gtag_report_conversion(url) {
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="fw-bold mb-3">Let’s discuss your project</h2>
-                        <p class="text-muted mb-4">Tell us your goals and we’ll propose the right architecture, roadmap, and budget-fit approach.</p>
+                        <p class="text-muted mb-4">Tell us your goals and we’ll propose the right architecture, roadmap, and budget-fit approach. Click the button on left below to have a WhatsApp Conversation with us, or click on the right for contact us via email.</p>
                         <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
-                            <a class="btn btn-primary btn-lg" href="https://wa.me/60109216457" target="_blank" rel="noopener noreferrer">WhatsApp +60 10-921 6457</a>
-                            <a class="btn btn-outline-primary btn-lg" href="mailto:ebs.resources.ent@gmail.com">ebs.resources.ent@gmail.com</a>
+                            <a class="btn btn-primary btn-lg" href="https://wa.me/60109216457" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion_ws(this.href);">WhatsApp +60 10-921 6457</a>
+                            <a class="btn btn-outline-primary btn-lg" href="mailto:afiqkhairuddin@ebsresources.my" onclick="return gtag_report_conversion(this.href);">afiqkhairuddin@ebsresources.my</a>
                         </div>
                     </div>
                 </div>
