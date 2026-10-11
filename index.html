@@ -77,13 +77,25 @@ function gtag_report_conversion(url) {
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion_ws() {
-  if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-10852613132/Z6GjCJXF5dQcEIz49rYo',
-      'value': 1.0,
-      'currency': 'MYR'
-    });
+
+  console.log('[WhatsApp] Button clicked');
+
+  if (typeof gtag !== 'function') {
+    console.error('[WhatsApp] Google tag is not available');
+    return;
   }
+
+  console.log('[WhatsApp] Sending conversion event');
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-10852613132/Z6GjCJXF5dQcEIz49rYo',
+    'value': 1.0,
+    'currency': 'MYR',
+    'event_callback': function() {
+      console.log('[WhatsApp] Google conversion callback executed');
+    },
+    'event_timeout': 2000
+  });
 }
 </script>
     
