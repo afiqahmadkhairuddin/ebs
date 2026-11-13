@@ -1,0 +1,13 @@
+{
+  "commit": "91fe243",
+  "source": "index.html",
+  "tagId": "AW-10852613132",
+  "loader": "https://www.googletagmanager.com/gtag/js?id=AW-10852613132",
+  "email": { "function": "gtag_report_conversion", "send_to": "AW-10852613132/HSdnCJDq5dQcEIz49rYo", "value": 1, "currency": "MYR", "controls": 1 },
+  "whatsapp": { "function": "gtag_report_conversion_ws", "send_to": "AW-10852613132/Z6GjCJXF5dQcEIz49rYo", "value": 1, "currency": "MYR", "event_timeout": 2000, "controls": 3 },
+  "phone": "60109216457",
+  "emailAddress": "afiqkhairuddin@ebsresources.my",
+  "otherTagsFound": [],
+  "formDeliveryEndpoint": null,
+  "historicalAccountTotalsVerified": false
+}
